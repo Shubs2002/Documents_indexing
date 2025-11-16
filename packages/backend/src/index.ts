@@ -184,6 +184,6 @@ const app = new Elysia()
       };
     }
   })
-  .listen(3001);
+  .listen(process.env.PORT || 3001);
 
 console.log(`🚀 Backend running at http://${app.server?.hostname}:${app.server?.port}`);
